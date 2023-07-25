@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Generator</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!--the below link is taken from "cdn": content delivery network...this connects our PC to the nearest possible server.
+ we are using "cdn" for our font icons of our webstie so that they dont take too much time in loading.
+ BTW we are using our font icons from "FONT AWSOME" website copyright free-->
+
+<!--STUDY below line thoroughly-->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+
+</head>
+
+
+
+<body>
+    <div class="quote-box">
+    
+        <div class="heading">
+              <h1> Quote Generator </h1>   <!--STYLE ITTTT-->
+              <hr size="4" color="#D4E2D4" >
+        </div>      
+    <div class="qdisplay">
+        <!-- Quotes will be displayed here -->
+        <p id="quote">Whereas recognition of the inherent dignity</p>
+        <span id="author">Author Name</span>
+    </div>
+    <button class="button" onclick="getquote(api_url); "> New Quotes</button>  <!--STYLE ITTTT-->
+    
+</div>
+
+
+<!--We are using QUOTABLE API by the author: lukePeavey/quotable
+-->
+    <!--Adding Javascript File-->
+    <script src="main.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,73 @@
+
+/*Adding gogle fonts link*/
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@500&display=swap');
+
+
+
+.{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: #FAF3F0 ;
+}
+.quote-box{
+    background-color: #FFCACC;
+    position: absolute;
+    width: 700px;
+    top: 50%;
+    left: 50%;
+    padding: 40px;
+    text-align: center;
+    transform: translate(-50%,-50%);    /*translate is used to position the element in x-y plane.*/
+    box-shadow: 0 10px 20px 0px rgba(15, 1, 1, 0.15) ;  
+    border-radius: 25px;
+}
+
+.qdisplay{
+    font-family: 'Edu SA Beginner', cursive;
+    font-size: 26px;
+    min-height: 110px;
+}
+
+.qdisplay p::before, .qdisplay p::after{
+    content: '"';    /*this code line puts "QUOTES SYMBOL" in the beginning and in the ending of our first line i.e quote .*/
+}
+
+.qdisplay span{
+    display: block;
+    margin-top: 10px;
+    float: right;  /*this will shift the second linei.e AUTHOR NAME line, towards the right side.*/
+    position: relative;
+}
+.qdisplay span::before{
+    content: '~';  /*Adding TILDE ~ sign in front of the author's name.*/
+}
+
+.quote-box h1{
+    margin-bottom: 25px;
+}
+.quote-box button{
+    background-color:     #D4E2D4;
+    height: 40px;
+    width: 100px;
+    font-family: sans-serif;
+    border: 2px solid #D4E2D4;
+    border-radius: 10px;
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;  /*when our mousecome over the button it become like the index finger pointing to it.*/
+}
+.heading{
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+.heading h1{
+    margin-bottom: 0;
+}
